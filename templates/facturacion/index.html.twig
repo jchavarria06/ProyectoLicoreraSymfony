@@ -1,0 +1,83 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FacturacionController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+<div class="mt-4" >
+  <div class= "row">
+    <div class= "col-md-6">
+        <label id="label">Número de factura</label>
+      <input id="input" type="text" disabled />
+    </div>
+    <div class= "col-md-6">
+      <label style = "margin-right: 94px" id="label">Fecha</label>
+      <input type="text" disabled />
+    </div>
+    <div class= "col-md-6">
+      <label style = "margin-right: 9px">Cedula del cliente</label>
+      <input type="text" disabled />
+    </div>
+    <div class= "col-md-6">
+      <label>Nombre del cliente</label>
+      <input type="text" disabled />
+    </div>
+  </div>
+</div>
+
+<div style="height: 50em; overflow-x:auto; display: grid; padding-top: 30px;">
+  <table>
+    <tr>
+      <th>Código</th>
+      <th>Nombre</th>
+      <th>Descripcion</th>
+      <th>Precio</th>
+      <th>Cantidad</th>
+      <th>Subtotal</th>
+      <th>IVA</th>
+      <th>Total</th>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      
+    </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      
+    </tr>
+  </table>
+  <div>
+    <button class= "btn btn-primary">
+      Pagar
+    </button>
+  </div>
+</div>
+{% endblock %}

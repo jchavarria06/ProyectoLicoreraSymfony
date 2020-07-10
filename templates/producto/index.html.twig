@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Producto index{% endblock %}
+
+{% block body %}
+<div>
+    <h1>Producto index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>{{ knp_pagination_sortable(pagination, 'Id', 'producto.id') }}</th>
+                <th>{{ knp_pagination_sortable(pagination, 'Codigo', 'producto.codigo') }}</th>
+                <th>{{ knp_pagination_sortable(pagination, 'Nombre', 'producto.nombre') }}</th>
+                <th>{{ knp_pagination_sortable(pagination, 'Descripcion', 'producto.descripcion') }}</th>
+                <th>{{ knp_pagination_sortable(pagination, 'Categoria', 'producto.categorio') }}</th>
+                <th>{{ knp_pagination_sortable(pagination, 'Precio', 'producto.precio') }}</th>
+                <th>{{ knp_pagination_sortable(pagination, 'Foto', 'producto.foto') }}</th>
+                <th>{{ knp_pagination_sortable(pagination, 'Cantidad', 'producto.cantidad') }}</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for producto in pagination %}
+            <tr>
+                <td>{{ producto.id }}</td>
+                <td>{{ producto.codigo }}</td>
+                <td>{{ producto.nombre }}</td>
+                <td>{{ producto.descripcion }}</td>
+                <td>{{ producto.categorio }}</td>
+                <td>{{ producto.precio }}</td>
+                <td>{{ producto.foto }}</td>
+                <td>{{ producto.cantidad }}</td>
+                <td>
+                    <a href="{{ path('producto_show', {'id': producto.id}) }}">show</a>
+                    <a href="{{ path('producto_edit', {'id': producto.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="9">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('producto_new') }}">Create new</a>
+    <div class="navigation">
+    {{ knp_pagination_render(pagination) }}
+   </div>
+   
+</div>
+
+{% endblock %}

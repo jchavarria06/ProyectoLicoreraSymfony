@@ -1,0 +1,161 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PrincipalController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 8000px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="container mt-3">
+        <h2 style="color: black">Nuevos productos</h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="overflow: auto">
+
+            <!-- Indicadores -->
+            <ul class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+                <li data-target="#myCarousel" data-slide-to="7"></li>
+                <li data-target="#myCarousel" data-slide-to="8"></li>
+            </ul>
+
+            <!-- slide -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Vinos-41.jpg" alt="Falcon & Winter Soldier" width="1100px" height="500px">
+                    <div class="carousel-caption">
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/uva.jpg" alt="How to train your Dragon" width="1100" height="500">
+                    <div class="carousel-caption">
+                        
+            
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/cerveza2.jpg" alt="Infinity War" width="1100" height="500">
+                    <div class="carousel-caption">
+                        
+            
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/modelo.jpg" alt="Avatar" width="1100" height="500">
+                    <div class="carousel-caption">
+                        
+            
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/licores.jpg" alt="AntMan 2" width="1100" height="500">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/joni.jpg" alt="Justice League" width="1100" height="500">
+                    <div class="carousel-caption">
+                        
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/ce.jpg" alt="Sonic" width="1100" height="500">
+                    <div class="carousel-caption">
+                   
+                    </div>
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="img/chivas.jpg" alt="Star Wars: The Rise of Skywalker" width="1100" height="500">
+                      <div class="carousel-caption">
+                    </div>
+                    	
+                </div>
+            </div>
+
+            <!-- Controles prev and next-->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+    </div>
+
+    <div id="Contenido" class="mt-4">
+        <div class="row">
+            <div class="col-md-4">
+               <figure class="gallery-item">
+                    <div>
+                        <a  href="/cervezas" >
+                            <img src="img/cervezas/pilsen.jpg" alt="" class="img-thumbnail" height="300" max-width: 300px 100vw, 300px src="www/css/img/deportivaHombre.png" width="300">
+                        </a>
+                    </div>
+                    <figcaption id="gallery01">Cervezas</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure class="gallery-item">
+                    <div>
+                        <a  href="/licores" >
+                            <img src="img/licores/jim-beam-honey-1000-ml.jpg" alt="" class="img-thumbnail" height="300" max-width: 300px 100vw, 300px src="www/css/img/conjuntoSportDama.png" width="300">
+                        </a>
+                    </div>
+                    <figcaption  id="gallery02">Licores</figcaption>
+                </figure>
+            </div>
+
+            <div class="col-md-4">
+               <figure class="gallery-item">
+                    <div>
+                        <a  href="/vinos" >
+                            <img src="img/vinos/altos-del-plata-syrah-750-ml.jpg" alt="" class="img-thumbnail" height="300" max-width: 300px 100vw, 300px src="www/css/img/VestidoDama01.jpg" width="300">
+                        </a>
+                    </div>
+                    <figcaption id="gallery03">Vinos</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4">
+               <figure class="gallery-item">
+                    <div>
+                        <a  href="/cervezas" >
+                            <img src="img/imperial.jpg" alt="" class="img-thumbnail" height="300" max-width: 300px 100vw, 300px src="www/css/img/deportivaHombre.png" width="300">
+                        </a>
+                    </div>
+                    <figcaption id="gallery01">Cervezas</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure class="gallery-item">
+                    <div>
+                        <a  href="/licores" >
+                            <img src="img/licores/glenfiddich-21-anos-gran-reserva-750-ml.jpg" alt="" class="img-thumbnail" height="300" max-width: 300px 100vw, 300px src="www/css/img/conjuntoSportDama.png" width="300">
+                        </a>
+                    </div>
+                    <figcaption  id="gallery02">Licores</figcaption>
+                </figure>
+            </div>
+
+            <div class="col-md-4">
+               <figure class="gallery-item">
+                    <div>
+                        <a  href="/vinos" >
+                            <img src="img/vinos/ge-750-ml.jpg" alt="" class="img-thumbnail" height="300" max-width: 300px 100vw, 300px src="www/css/img/VestidoDama01.jpg" width="300">
+                        </a>
+                    </div>
+                    <figcaption id="gallery03">Vinos</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

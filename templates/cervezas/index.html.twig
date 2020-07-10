@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CervezasController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+ <div id="Contenido" class="mt-4">
+        
+        <div class="row" >
+         {% for producto in pagination %}
+            <div class="col-md-6">
+               <figure class="gallery-item">
+                    <div id='contenido'>
+                        <a  href="/cervezas" >
+                            <img src="{{ asset ('uploads/fotos/'~producto.foto) }}" alt="" class="img-thumbnail" height="300" max-width: 300px 100vw, 300px  width="300">
+                        </a>
+                    </div>
+                    <figcaption id="gallery01">{{producto.nombre}} <br> ₡{{producto.precio}}</figcaption>
+                </figure>
+            </div>
+        {% endfor %}
+        </div>
+
+        <div class="navigation">
+    {{ knp_pagination_render(pagination) }}
+   </div>
+   
+    </div>
+{% endblock %}

@@ -1,0 +1,50 @@
+body{
+    background-color: #e0ebeb;
+}
+.container{
+    height: 100%;
+    background-color: #e0ebeb;
+
+}
+form{
+    height: 50em;
+}
+
+.pie {
+    background-color: #012141;
+    background-size: cover;
+    padding: 1%;
+}
+
+#arturo{
+    height: 50em;
+}
+
+.gallery-item {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+    padding: 2%;
+}
+
+#algo{
+    background-color: coral;
+}
+
+.col-sm{
+    color:white;
+}
+
+#contenido{
+    display: inline-block;
+}
+
+.gallery-item{
+    padding: 0%;
+}
+
+#carrito{
+    margin-top: 1%;
+    margin-left: 70%;
+}
